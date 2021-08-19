@@ -19,8 +19,17 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
+
+### check and make sure all packages are installed
+
+````bash
+
+    "@types/node": "^16.0.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    ```
 
 ## Running the app
 
@@ -33,7 +42,7 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
+````
 
 ## Test
 
