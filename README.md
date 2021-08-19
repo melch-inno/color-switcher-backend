@@ -69,7 +69,7 @@ localLink: http://localhost:3000/color-swatch/type?type=rgb
 
 ## How to extend code
 
-you have add color type to the enum class: `src/color-swatch/dto/color-type.enum.ts`
+Add the new color type to the enum class: `src/color-swatch/dto/color-type.enum.ts`
 
 ```bash
 export enum ColorType {
@@ -80,15 +80,19 @@ export enum ColorType {
 
 Extend the data transfer object DTO in the `src/color-swatch/dto/color-swatch.dto.ts`
 
+- The DTO is used to extend the enum class to accept the new color type.
+- Make sure export it as part of the TypeArray.
+- After building the new function or feature to genrate the new color swatch, export it aas part of the ColorTypesMapArray.
+
 ```yml
 export class ColorTypeDto {
   @IsNotEmpty()
   @IsOptional()
-  @IsIn([ColorType.rgb, ColorType.hsl, "add your color type"])
+  @IsIn([ColorType.rgb, ColorType.hsl, "new color type goes here"])
   type: ColorType;
 }
 
-export const TypesArray = [ColorType.rgb, ColorType.hsl, 'export your color as part of the array'];
+export const TypesArray = [ColorType.rgb, ColorType.hsl, 'export your color as part of the array (eg. ColorType.hex'];
 export const ColorTypesMapArray = [GetRGBColorSwatch, GetHCLColorSwatch, "Create your color function and add it the array"];
 
 
