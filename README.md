@@ -44,18 +44,27 @@ $ npm run start:dev
 $ npm run start:prod
 ````
 
-## Test
+### Using the app
 
-```bash
-# unit tests
-$ npm run test
+```yml
+link: https://color-switcher-back.herokuapp.com/color-swatch/type?type=rgb
 
-# e2e tests
-$ npm run test:e2e
+OR
 
-# test coverage
-$ npm run test:cov
+localLink: http://localhost:3000/color-swatch/type?type=rgb
 ```
+
+## Random colors
+
+![3-load-test](./screenshots/random.png)
+
+## Single color swatch: rgb
+
+![3-load-test](./screenshots/rgb.png)
+
+## Single color swatch: hsl
+
+![3-load-test](./screenshots/hsl.png)
 
 ## How to extend code
 
