@@ -9,6 +9,6 @@ async function bootstrap() {
     app.enableCors();
     console.log(`accepting request from origin`);
   }
-  await app.listen(3000);
+  await await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
