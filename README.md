@@ -14,8 +14,9 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-[Nest](https://colors-witcher.herokuapp.com/) Demo App.
+### Color Switcher backend app built with NestJS
+
+[Nest](https://colors-witcher.herokuapp.com/) Demo App || Nestjs TypeScript.
 
 ## Installation
 
